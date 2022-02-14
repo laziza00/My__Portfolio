@@ -98,6 +98,7 @@ eledubtn.addEventListener('click',function () {
 eleduitembox.classList.add('skill-show');
 });
 
+
 // elaboutremove.addEventListener('click',function () {
 // elaboutbox.classList.remove('about-show');
 //  });
