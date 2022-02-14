@@ -16,27 +16,29 @@
 
 
 <section class="hero">
+ 
   <div class="container-fluid">
     <div class="hero__inner">
+ 
       <div class="hero__img-box col-xs-12 col-sm-4">
          </div>
         <div class="hero__nav-bar col-xs-12 col-sm-8">
+    
           <ul class="hero__list style-none">
-            <li class="hero__item">          <div>
+            <li class="hero__item">        
+              <div>
               <a class="hero__item-box" href="#">
                 <div class="hero__home">
-                  <p class="hero__hello">hi there? i'm</p>
-                  <span class="hero__name">Laziza  Uchqun  qizi</span>
-                  <div class="hero__anim">
-                    <p class="hero__anim1">developer</p>
-                    <p class="hero__anim2">designer</p>
-                    <p class="hero__anim3">blogger</p>
+                  <p class="hero__hello">hi  there !    i'm</p>
+                  <span class="hero__name">Laziza     Uchqun   qizi</span>
+                  <div class="heroanimate">
+                   
                   </div>
               </div>
             </a>
           </div>
         </li>
-          <li class="hero__item">        
+          <li class="hero__item"  id="aboutbtn">        
             <a class="hero__item-box" href="#">
               <div class="hero__home-box">
                 <div class="hero__desc--white">
@@ -50,21 +52,21 @@
             </div>
           </a>
       </li>
-        <li class="hero__item">          
-          <a class="hero__item-box" href="#">
-            <div class="hero__home-box">
-              <div class="hero__desc--white">
-                <span class="hero__desc">my </span>
-                <span class="hero__desc-yellow">my</span>
-              </div>
-              <div class="hero__desc--white">
-                <span class="hero__text-me">Portfolio</span>
-                <span class="hero__text-yellow">Portfolio</span>
-              </div>
-          </div>
-        </a>
-    </li>
-      <li class="hero__item">          
+      <li class="hero__item">        
+        <a class="hero__item-box" href="#">
+          <div class="hero__home-box">
+            <div class="hero__desc--white">
+              <span class="hero__desc">my </span>
+              <span class="hero__desc-yellow">my </span>
+            </div>
+            <div class="hero__desc--white">
+              <span class="hero__text-me">portfolio</span>
+              <span class="hero__text-yellow">portfolio</span>
+            </div>
+        </div>
+      </a>
+  </li>
+      <li class="hero__item" id="Getbtn">          
         <a class="hero__item-box" href="#">
           <div class="hero__home-box">
             <div class="hero__desc--white">
@@ -84,6 +86,78 @@
       </div>
     </div>
   </div>
+
+  <div class="hero__dark-box dark" id="settingbtn">
+  <div class="dark__box">
+    <i class='bx bxs-cog'></i>  
+  </div>
+ </div>
+  
+    <div class="dark__inner" id="darkmodal">
+      <div class="dark__inner-box"> 
+        <p class="dark__text">style switecher</p>
+      <button class="dark__remove" id="darkremove">
+        <div class="dark__remove-inner"></div>
+      </button>
+    </div>
+     
+      <div class="dark__color">
+        <ul class="dark__list style-none">
+          <li class="dark__item">
+            <button class="dark__red" id="red">
+            </button>
+          </li>
+          <li class="dark__item">
+            <button class="dark__red" id="green">
+            </button>
+          </li>
+          <li class="dark__item">
+            <button class="dark__red" id="blue">
+            </button>
+          </li>
+          <li class="dark__item">
+            <button class="dark__red" id="purple">
+            </button>
+          </li>
+          <li class="dark__item">
+            <button class="dark__red " id="own">
+            </button>
+          </li>
+          <li class="dark__item">
+            <button class="dark__red" id="lawngreen">
+            </button>
+          </li>
+          <li class="dark__item">
+            <button class="dark__red" id="brown">
+            </button>
+          </li>
+          <li class="dark__item">
+            <button class="dark__red" id="turquoise">
+            </button>
+          </li>
+          <li class="dark__item">
+            <button class="dark__red" id="orangered">
+            </button>
+          </li>
+          <li class="dark__item">
+            <button class="dark__red" id="seagreen">
+            </button>
+          </li>
+         
+        </ul>
+        <p class="dark__text">body skin</p>
+      </div>
+      <div class="dark__light-box">
+        <button class="dark__btn dark__light-btn" id="lightbtn"><i class='bx bxs-sun' ></i>
+        </button>
+        <button class="dark__btn" id="darkbtn"><i class='bx bxs-moon' ></i>
+        </button>
+   
+      </div>
+ 
+    </div>
+
+
 </section>
 
 
@@ -96,20 +170,30 @@
 
 
 
-<div class="about">
-  <div class="container-fluid">
+<div class="about" id="About">
+  <!-- <div class="container-fluid"> -->
     <div class="about__inner">
-      <button class="btn about__btn"> <i class='bx bx-x' id="icon"></i></button>
-      <h2 class="about__title-main">About me</h2>
-      <i class='bx bx-x' id="icon"></i>
-      <img src="images/" alt="img">
-      <div>
-        <i class='bx bx-x' id="icon"></i>
-       <h3 class="about__title title">personal info</h3> 
+      <div class="about__title-box">
+        <h2 class="about__title-main about__title-main1">About </h2>
+        <h2 class="about__title-main about__title-main2">me</h2>
+      </div>
+      <button class="btn about__btn" id="aboutremove">
+         <div class="about__remove"></div>
+      </button>
+      <div class="about__line-box">
+        <div class="about__user">
+          <i class='bx bxs-user-detail'></i>
+        </div>
+      </div>
+
+      <div class="about__info ">
+      <i class='bx bxs-user'></i>
+      <h3 class="about__title title">personal info</h3> 
       </div>
        <p class="about__text">I'm Freelance Web Designer & Developer baced in Moscov, Russia. I have serious passion for UI effects, animations and creating intuitive, with over a decade of experience.</p>
+       <div class="about__info-box">
        <div class="about__list-box">
-         <ul class="about__list">
+         <ul class="about__list style-none">
            <li class="about__item">
              <h3 class="about__item-desc">
                first name:
@@ -123,8 +207,8 @@
             <p class="about__item-info">abdulaxatova</p>
           </li>
           <li class="about__item">
-            <h3 class="about__item-desc">
-              date of birth:
+            <h3 class=" desc">
+              Date of birth:
             </h3>
             <p class="about__item-info">15 February 2000</p>
           </li>
@@ -140,43 +224,309 @@
             </h3>
             <p class="about__item-info">availabe</p>
           </li>
-          <li class="about__item">
-            <h3 class="about__item-desc">
-              adress:
-            </h3>
-            <p class="about__item-info">uzbekistan, tashkent</p>
-          </li>
-          <li class="about__item">
-            <h3 class="about__item-desc">
-              email:
-            </h3>
-            <p class="about__item-info">lazizauchkunovna@gmail.com</p>
-          </li>
-          <li class="about__item">
-            <h3 class="about__item-desc">
-              spoken languages:
-            </h3>
-            <p class="about__item-info">uzbek, english, russian</p>
-          </li>
-          <li class="about__item">
-            <h3 class="about__item-desc">
-              skype:
-            </h3>
-            <p class="about__item-info">laziza.abdulaxatova</p>
-          </li>
-    
          </ul>
-         <a class="about__link-down link" href="#">
-           download resume   <i class='bx bx-x' id="icon"></i>
-         </a>
-         <a class="about__link-blog link" href="#">my blog   <i class='bx bx-x' id="icon"></i></a>
-       </div>
-  
-     
+         </div>
+         <div class="about__list-box">
+           <ul class="about__list style-none">
+            <li class="about__item">
+              <h3 class="about__item-desc">
+                adress:
+              </h3>
+              <p class="about__item-info">uzbekistan, tashkent</p>
+            </li>
+            <li class="about__item">
+              <h3 class="about__item-desc">
+                email:
+              </h3>
+              <p class="about__item-info gmail">lazizauchkunovna@gmail.com</p>
+            </li>
+            <li class="about__item">
+              <h3 class="about__item-desc">
+                spoken languages:
+              </h3>
+              <p class="about__item-info">uzbek, english, russian</p>
+            </li>
+            <li class="about__item">
+              <h3 class="about__item-desc">
+                skype:
+              </h3>
+              <p class="about__item-info">laziza.abdulaxatova</p>
+            </li>
+           </ul>
+         </div>
+        </div>
+        <div class="about__link-block">
+          <a class="about__link-down link" href="#">
+            download resume   <i class='bx bx-file'></i>
+          </a>
+          <a class="about__link-blog link" href="#">my blog  <i class='bx bxs-edit' ></i>
+        </a>
+        </div>
+    
     </div>
-  </div>
-</div>
+    <div class="skill">
+        <div class="skill__inner">
+          <div class="skill__block">
+            <ul class="skill__btn-list style-none">
+              <li class="skill__btn-item">
+                <button class="skill__btn" id="expbtn">
+                  <i class='bx bxs-briefcase'></i>experience
+                </button>
+              </li>
+              <li class="skill__btn-item">
+                <button class="skill__btn" id="edubtn">
+                  <i class='bx bxs-layer'></i>education</button>
+              </li>
+              <li class="skill__btn-item">
+                <button class="skill__btn" id="skillbtn">
+                  <i class='bx bxs-star'></i>skills
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="skill__info">
+            <ul class="skill__list style-none">
+              <li class="skill__item" id="expitem">
+                <div class="skill__item-header">
+                  <i class='bx bxs-briefcase'></i>experience
+                </div>
+                <div class="skill__item-hero web">
+                  <p class="web__text">web desigener  - envato</p>
+                  <p class="web__date">
+                    <i class='bx bx-calendar-alt'></i>2015-2018
+                  </p>
+                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                  <p class="web__text">WEB DEVELOPER - GOOGLE</p>
+                  <p class="web__date">
+                    <i class='bx bx-calendar-alt'></i>2015-2018
+                  </p>
+                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                  <p class="web__text">COMMUNITY MANAGER - ADOBE</p>
+                  <p class="web__date">
+                    <i class='bx bx-calendar-alt'></i>2015-2018
+                  </p>
+                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                </div>
+              </li>
+              <li class="skill__item" id="eduitem">
+                <div class="skill__item-header">
+                  <i class='bx bxs-layer'></i>EDUCATION
+                </div>
+                <div class="skill__item-hero web">
+                  <p class="web__text">ENGINEERING DIPLOMA - OXFORD UNIVERSITY</p>
+                  <p class="web__date">
+                    <i class='bx bx-calendar-alt'></i>2015-2018
+                  </p>
+                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                  <p class="web__text">MASTERS DEGREE - PARIS UNIVERSITY</p>
+                  <p class="web__date">
+                    <i class='bx bx-calendar-alt'></i>2015-2018
+                  </p>
+                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                  <p class="web__text">BACHELOR DEGREE - BERLIN HIGHER INSTITUTE</p>
+                  <p class="web__date">
+                    <i class='bx bx-calendar-alt'></i>2015-2018
+                  </p>
+                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                </div>
+              </li>
+              <li class="skill__item" id="skillitem">
+                <div class="skill__item-header">
+                    <i class='bx bxs-star'></i>skills
+                </div>
+                <div class="skill__item-hero web">
+                  <p class="web__text">web desigener  - envato</p>
+                  <p class="web__date">
+                    <i class='bx bx-calendar-alt'></i>2015-2018
+                  </p>
+                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                  <p class="web__text">web desigener  - envato</p>
+                  <p class="web__date">
+                    <i class='bx bx-calendar-alt'></i>2015-2018
+                  </p>
+                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                  <p class="web__text">web desigener  - envato</p>
+                  <p class="web__date">
+                    <i class='bx bx-calendar-alt'></i>2015-2018
+                  </p>
+                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="done">
+        <ul class="done__list style-none">
+          <li class="done__item">
+            <i class='bx bxs-briefcase'></i>
+            <p class="done__sum">4+</p>
+            <p class="done__text">
+              YEARS EXPERIENCE
+            </p>
+          </li>
+          <li class="done__item">
+            <i class='bx bx-donate-heart'></i>
+            <p class="done__sum">89+</p>
+            <p class="done__text">
+              DONE PROJECTS
+            </p>
+          </li>
+          <li class="done__item">
+            <i class='bx bx-heart'></i>
+            <p class="done__sum">77+</p>
+            <p class="done__text">
+              HAPPY CUSTOMERS
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="go-top">
+        <a class="go-link" href="#"><i class='bx bx-up-arrow-alt'></i>
+          <i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </div>
 
+
+<div class="get" id="getmodalbox">
+  <div class="get__inner ">
+ 
+    <div class=" get__title-box">
+      <h2 class=" get__title-main get__title-main1">get </h2>
+      <h2 class="get__title-main get__title-main2">in touch</h2>
+    </div>
+      <button class=" get__btn-remove" id="getremove">
+       <div class=" get__remove"></div>
+    </button>
+    <div class="get__line-box">
+      <div class=" get__user-box">
+        <i class='bx bxs-envelope-open'></i>
+      </div>
+    </div>
+    <div class="get__main-box">
+      <div class="get__block social">
+        <div class="social-box">
+          <ul class="social__list style-none">
+            <li class="social__item">
+             <p class="social__phone">PHONE</p> 
+             <p class="social__num"><i class='bx bxs-phone'></i>
+              +34 62 11 84 01</p>
+            </li>
+            <li class="social__item">
+              <p class="social__phone">EMAIL
+              </p> 
+              <p class="social__num email"><i class='bx bxl-gmail' ></i>
+                lazizauchkunovna@gmail.com</p>
+             </li>
+             <li class="social__item">
+              <p class="social__phone">SKYPE</p> 
+              <p class="social__num"><i class='bx bxl-skype' ></i>
+                linda.smith</p>
+             </li>
+             <li class="social__item">
+              <p class="social__phone">ADDRESS
+              </p> 
+              <p class="social__num"><i class='bx bx-home' ></i>
+                Tashkent, uzbekistan</p>
+             </li>
+             <li class="social__item">
+              <p class="social__phone">SOCIAL PROFILES
+              </p> 
+              <div class="social__box">
+                <ul class="social__list-inner style-none">
+                  <li class="social__item-inner">
+                    <a href="#">
+                      <i class='bx bxl-facebook'></i>
+                    </a>
+                  </li>
+                  <li class="social__item-inner">
+                    <a href="#">
+                      <i class='bx bxl-twitter' ></i>
+                    </a>
+                  </li>
+                  <li class="social__item-inner">
+                    <a href="#">
+                      <i class='bx bxl-google-plus' ></i>
+                    </a>
+                  </li>
+                  <li class="social__item-inner">
+                    <a href="#">
+                      <i class='bx bxl-linkedin' ></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+           
+             </li>
+          </ul>
+        </div> 
+        </div> 
+        <div class="get__info free">
+          <h3 class="get__title">
+            FEEL FREE TO DROP ME A LINE
+          </h3>
+          <p class="get__text">
+            If you have any suggestion, project or even you want to say Hello.. Please fill out the form below and I will reply you shortly.
+          </p>
+          <div class="get__form-box">
+            <form class="get__form" action="https:/html.academy.com">
+              <div class="get__input">
+                <i class='bx bxs-user'></i>
+                <input class="get__name" type="text" name="name" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="get__input">
+                <i class='bx bxs-envelope'></i>
+                <input class="get__name" type="email" name="email" id="email" placeholder="
+                Your Email" required>
+              </div>
+              <div class="get__input">
+                <i class='bx bxs-chat'></i>
+                <input class="get__name" type="text" name="comment" id="comment" placeholder="
+                Your Comment" required>
+              </div>
+            <button class="get__btn-send btn" type="submit">
+              send message<i class='bx bx-send'></i>
+            </button>
+            </form>
+          </div>
+       
+        </div>
+    </div>
+
+
+    </div>
+    <div class="go-top">
+      <a class="go-link" href="#"><i class='bx bx-up-arrow-alt'></i>
+        <i class='bx bx-up-arrow-alt'></i></a>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="typed.js"></script>
+<script>
+  var typed = new Typed ('.heroanimate', {
+    strings: [
+        "Developer",
+        "Blogger",
+        "Designer"
+    ],
+    typeSpeed: 50,
+    backSpedd: 50,
+    loop: true
+  });
+</script>
 
   <script src="js/main.js"></script>
 </body>
