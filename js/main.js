@@ -97,6 +97,7 @@ document.getElementById('lightbtn').addEventListener('click', function () {docum
 
 // color
 document.getElementById('red').addEventListener('click', function () {document.body.classList.toggle('red');
+
 }
 );
 document.getElementById('green').addEventListener('click', function () {document.body.classList.toggle('green');
