@@ -21,11 +21,11 @@ let elaboutbtn=document.getElementById('aboutbtn');
 let elaboutremove=document.getElementById('aboutremove');
 
 elaboutbtn.addEventListener('click',function () {
-elaboutbox.classList.add('portfolio-show');
+elaboutbox.classList.add('about-show');
 });
 
 elaboutremove.addEventListener('click',function () {
-elaboutbox.classList.remove('portfolio-show');
+elaboutbox.classList.remove('about-show');
  });
 
 
