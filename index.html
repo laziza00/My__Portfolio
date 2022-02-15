@@ -10,19 +10,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
   <link rel="stylesheet" href="css/style.css">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"
+        integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 </head>
 
 <body>
 
 
 <section class="hero">
- 
   <div class="container-fluid">
     <div class="hero__inner">
  
-      <div class="hero__img-box col-xs-12 col-sm-4">
+      <div class="hero__img-box ">
          </div>
-        <div class="hero__nav-bar col-xs-12 col-sm-8">
+        <div class="hero__nav-bar ">
     
           <ul class="hero__list style-none">
             <li class="hero__item">        
@@ -32,7 +35,7 @@
                   <p class="hero__hello">hi  there !    i'm</p>
                   <span class="hero__name">Laziza     Uchqun   qizi</span>
                   <div class="heroanimate">
-                   
+                   <p><span class="type"></span></p>
                   </div>
               </div>
             </a>
@@ -52,7 +55,7 @@
             </div>
           </a>
       </li>
-      <li class="hero__item">        
+      <li class="hero__item" id="portfoliobtn">        
         <a class="hero__item-box" href="#">
           <div class="hero__home-box">
             <div class="hero__desc--white">
@@ -171,7 +174,6 @@
 
 
 <div class="about" id="About">
-  <!-- <div class="container-fluid"> -->
     <div class="about__inner">
       <div class="about__title-box">
         <h2 class="about__title-main about__title-main1">About </h2>
@@ -262,125 +264,126 @@
           <a class="about__link-blog link" href="#">my blog  <i class='bx bxs-edit' ></i>
         </a>
         </div>
-    
-    </div>
-    <div class="skill">
-        <div class="skill__inner">
-          <div class="skill__block">
-            <ul class="skill__btn-list style-none">
-              <li class="skill__btn-item">
-                <button class="skill__btn" id="expbtn">
-                  <i class='bx bxs-briefcase'></i>experience
-                </button>
-              </li>
-              <li class="skill__btn-item">
-                <button class="skill__btn" id="edubtn">
-                  <i class='bx bxs-layer'></i>education</button>
-              </li>
-              <li class="skill__btn-item">
-                <button class="skill__btn" id="skillbtn">
-                  <i class='bx bxs-star'></i>skills
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="skill__info">
-            <ul class="skill__list style-none">
-              <li class="skill__item" id="expitem">
-                <div class="skill__item-header">
-                  <i class='bx bxs-briefcase'></i>experience
-                </div>
-                <div class="skill__item-hero web">
-                  <p class="web__text">web desigener  - envato</p>
-                  <p class="web__date">
-                    <i class='bx bx-calendar-alt'></i>2015-2018
-                  </p>
-                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
-                  <p class="web__text">WEB DEVELOPER - GOOGLE</p>
-                  <p class="web__date">
-                    <i class='bx bx-calendar-alt'></i>2015-2018
-                  </p>
-                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
-                  <p class="web__text">COMMUNITY MANAGER - ADOBE</p>
-                  <p class="web__date">
-                    <i class='bx bx-calendar-alt'></i>2015-2018
-                  </p>
-                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
-                </div>
-              </li>
-              <li class="skill__item" id="eduitem">
-                <div class="skill__item-header">
-                  <i class='bx bxs-layer'></i>EDUCATION
-                </div>
-                <div class="skill__item-hero web">
-                  <p class="web__text">ENGINEERING DIPLOMA - OXFORD UNIVERSITY</p>
-                  <p class="web__date">
-                    <i class='bx bx-calendar-alt'></i>2015-2018
-                  </p>
-                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
-                  <p class="web__text">MASTERS DEGREE - PARIS UNIVERSITY</p>
-                  <p class="web__date">
-                    <i class='bx bx-calendar-alt'></i>2015-2018
-                  </p>
-                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
-                  <p class="web__text">BACHELOR DEGREE - BERLIN HIGHER INSTITUTE</p>
-                  <p class="web__date">
-                    <i class='bx bx-calendar-alt'></i>2015-2018
-                  </p>
-                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
-                </div>
-              </li>
-              <li class="skill__item" id="skillitem">
-                <div class="skill__item-header">
+        <div class="skill">
+          <div class="skill__inner">
+            <div class="skill__block">
+              <ul class="skill__btn-list style-none">
+                <li class="skill__btn-item">
+                  <button class="skill__btn" id="expbtn">
+                    <i class='bx bxs-briefcase'></i>experience
+                  </button>
+                </li>
+                <li class="skill__btn-item">
+                  <button class="skill__btn" id="edubtn">
+                    <i class='bx bxs-layer'></i>education</button>
+                </li>
+                <li class="skill__btn-item">
+                  <button class="skill__btn" id="skillbtn">
                     <i class='bx bxs-star'></i>skills
-                </div>
-                <div class="skill__item-hero web">
-                  <p class="web__text">web desigener  - envato</p>
-                  <p class="web__date">
-                    <i class='bx bx-calendar-alt'></i>2015-2018
-                  </p>
-                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
-                  <p class="web__text">web desigener  - envato</p>
-                  <p class="web__date">
-                    <i class='bx bx-calendar-alt'></i>2015-2018
-                  </p>
-                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
-                  <p class="web__text">web desigener  - envato</p>
-                  <p class="web__date">
-                    <i class='bx bx-calendar-alt'></i>2015-2018
-                  </p>
-                  <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
-                </div>
-              </li>
-            </ul>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="skill__info">
+              <ul class="skill__list style-none">
+                <li class="skill__item" id="expitem">
+                  <div class="skill__item-header">
+                    <i class='bx bxs-briefcase'></i>experience
+                  </div>
+                  <div class="skill__item-hero web">
+                    <p class="web__text">web desigener  - envato</p>
+                    <p class="web__date">
+                      <i class='bx bx-calendar-alt'></i>2015-2018
+                    </p>
+                    <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                    <p class="web__text">WEB DEVELOPER - GOOGLE</p>
+                    <p class="web__date">
+                      <i class='bx bx-calendar-alt'></i>2015-2018
+                    </p>
+                    <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                    <p class="web__text">COMMUNITY MANAGER - ADOBE</p>
+                    <p class="web__date">
+                      <i class='bx bx-calendar-alt'></i>2015-2018
+                    </p>
+                    <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                  </div>
+                </li>
+                <li class="skill__item" id="eduitem">
+                  <div class="skill__item-header">
+                    <i class='bx bxs-layer'></i>EDUCATION
+                  </div>
+                  <div class="skill__item-hero web">
+                    <p class="web__text">ENGINEERING DIPLOMA - OXFORD UNIVERSITY</p>
+                    <p class="web__date">
+                      <i class='bx bx-calendar-alt'></i>2015-2018
+                    </p>
+                    <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                    <p class="web__text">MASTERS DEGREE - PARIS UNIVERSITY</p>
+                    <p class="web__date">
+                      <i class='bx bx-calendar-alt'></i>2015-2018
+                    </p>
+                    <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                    <p class="web__text">BACHELOR DEGREE - BERLIN HIGHER INSTITUTE</p>
+                    <p class="web__date">
+                      <i class='bx bx-calendar-alt'></i>2015-2018
+                    </p>
+                    <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                  </div>
+                </li>
+                <li class="skill__item" id="skillitem">
+                  <div class="skill__item-header">
+                      <i class='bx bxs-star'></i>skills
+                  </div>
+                  <div class="skill__item-hero web">
+                    <p class="web__text">web desigener  - envato</p>
+                    <p class="web__date">
+                      <i class='bx bx-calendar-alt'></i>2015-2018
+                    </p>
+                    <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                    <p class="web__text">web desigener  - envato</p>
+                    <p class="web__date">
+                      <i class='bx bx-calendar-alt'></i>2015-2018
+                    </p>
+                    <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                    <p class="web__text">web desigener  - envato</p>
+                    <p class="web__date">
+                      <i class='bx bx-calendar-alt'></i>2015-2018
+                    </p>
+                    <p class="web__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="done">
-        <ul class="done__list style-none">
-          <li class="done__item">
-            <i class='bx bxs-briefcase'></i>
-            <p class="done__sum">4+</p>
-            <p class="done__text">
-              YEARS EXPERIENCE
-            </p>
-          </li>
-          <li class="done__item">
-            <i class='bx bx-donate-heart'></i>
-            <p class="done__sum">89+</p>
-            <p class="done__text">
-              DONE PROJECTS
-            </p>
-          </li>
-          <li class="done__item">
-            <i class='bx bx-heart'></i>
-            <p class="done__sum">77+</p>
-            <p class="done__text">
-              HAPPY CUSTOMERS
-            </p>
-          </li>
-        </ul>
-      </div>
+        <div class="done">
+          <ul class="done__list style-none">
+            <li class="done__item">
+              <i class='bx bxs-briefcase'></i>
+              <p class="done__sum">4+</p>
+              <p class="done__text">
+                YEARS EXPERIENCE
+              </p>
+            </li>
+            <li class="done__item">
+              <i class='bx bx-donate-heart'></i>
+              <p class="done__sum">89+</p>
+              <p class="done__text">
+                DONE PROJECTS
+              </p>
+            </li>
+            <li class="done__item">
+              <i class='bx bx-heart'></i>
+              <p class="done__sum">77+</p>
+              <p class="done__text">
+                HAPPY CUSTOMERS
+              </p>
+            </li>
+          </ul>
+        </div>
+    
+    </div>
+
       <div class="go-top">
         <a class="go-link" href="#"><i class='bx bx-up-arrow-alt'></i>
           <i class='bx bx-up-arrow-alt'></i></a>
@@ -470,30 +473,44 @@
           </p>
           <div class="get__form-box">
             <form class="get__form" action="https:/html.academy.com">
-              <div class="get__input">
-                <i class='bx bxs-user'></i>
-                <input class="get__name" type="text" name="name" id="name" placeholder="Your Name" required>
+              <div class="get__form-inner">
+                <i class='bx bxs-user'></i> 
+                <div class="group">   
+                  <input type="text" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>your Name</label>
+                </div>
               </div>
-              <div class="get__input">
-                <i class='bx bxs-envelope'></i>
-                <input class="get__name" type="email" name="email" id="email" placeholder="
-                Your Email" required>
+      
+              <div class="get__form-inner">
+              <i class='bx bxs-envelope'></i>  
+              <div class="group"> 
+                <input type="email" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>your email</label>
               </div>
-              <div class="get__input">
-                <i class='bx bxs-chat'></i>
-                <input class="get__name" type="text" name="comment" id="comment" placeholder="
-                Your Comment" required>
               </div>
+              <div class="get__form-inner">
+                <i class='bx bxs-chat'></i>  
+                <div class="group">   
+                  <input type="text" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>comment</label>
+                </div>
+              </div>
+       
             <button class="get__btn-send btn" type="submit">
-              send message<i class='bx bx-send'></i>
+              send message<i class='bx bxl-telegram'></i>
             </button>
+
             </form>
           </div>
        
         </div>
     </div>
-
-
     </div>
     <div class="go-top">
       <a class="go-link" href="#"><i class='bx bx-up-arrow-alt'></i>
@@ -503,8 +520,264 @@
 
 
 
+<div class="portfolio" id="portfoliobox">
+  <div class="portfolio__inner">
+    <div class=" portfolio__title-box ">
+      <h2 class=" portfolio__title-main portfolio__title-main1">my </h2>
+      <h2 class="portfolio__title-main portfolio__title-main2">portfolio</h2>
+    </div>
+      <button class=" portfolio__btn-remove" id="portfolioremove">
+       <div class=" portfolio__remove"></div>
+    </button>
+    <div class="portfolio__line-box">
+      <div class=" portfolio__user-box">
+        <i class='bx bxs-shopping-bag-alt'></i>
+      </div>
+    </div>
+    <ul class="portfolio__list style-none">
+      <li class="portfolio__item" id="blockbtn">
+        <div class="portfolio__link-box">
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-netlify' ></i>
+          </a>
+        </div>
+        <p class="portfolio__text">image project</p>
+        <div class="portfolio__flur"></div>
+        <div class="portfolio__img-box">
+          <img src="https://picsum.photos/id/71/271/200" alt="img">
+        </div>
+      </li>
+      <li class="portfolio__item">
+        <div class="portfolio__link-box">
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-netlify' ></i>
+          </a>
+        </div>
+        <p class="portfolio__text2">image project</p>
+        <div class="portfolio__flur2"></div>
+        <div class="portfolio__img-box">
+          <img src="https://picsum.photos/id/71/271/200" alt="img">
+        </div>
+      </li>
+      <li class="portfolio__item">         
+          <div class="portfolio__link-box">
+            <a class="portfolio__link" href="#">
+              <i class='bx bxl-github'></i>
+            </a>
+            <a class="portfolio__link" href="#">
+              <i class='bx bxl-netlify' ></i>
+            </a>
+          </div>
+        <p class="portfolio__text3">image project</p>
+        <div class="portfolio__flur3"></div>
+        <div class="portfolio__img-box">
+          <img src="https://picsum.photos/id/71/271/200" alt="img">
+        </div>
+      </li>
+      <li class="portfolio__item" id="blockbtn">
+        <div class="portfolio__link-box">
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-netlify' ></i>
+          </a>
+        </div>
+        <p class="portfolio__text">image project</p>
+        <div class="portfolio__flur"></div>
+        <div class="portfolio__img-box">
+          <img src="https://picsum.photos/id/71/271/200" alt="img">
+        </div>
+      </li>
+      <li class="portfolio__item">
+        <div class="portfolio__link-box">
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-netlify' ></i>
+          </a>
+        </div>
+        <p class="portfolio__text2">image project</p>
+        <div class="portfolio__flur2"></div>
+        <div class="portfolio__img-box">
+          <img src="https://picsum.photos/id/71/271/200" alt="img">
+        </div>
+      </li>
+      <li class="portfolio__item">
+        <div class="portfolio__link-box">
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-netlify' ></i>
+          </a>
+        </div>
+        <p class="portfolio__text3">image project</p>
+        <div class="portfolio__flur3"></div>
+        <div class="portfolio__img-box">
+          <img src="https://picsum.photos/id/71/271/200" alt="img">
+        </div>
+      </li>
+      <li class="portfolio__item" id="blockbtn">
+        <div class="portfolio__link-box">
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-netlify' ></i>
+          </a>
+        </div>
+        <p class="portfolio__text">image project</p>
+        <div class="portfolio__flur"></div>
+        <div class="portfolio__img-box">
+          <img src="https://picsum.photos/id/71/271/200" alt="img">
+        </div>
+      </li>
+      <li class="portfolio__item">
+        <div class="portfolio__link-box">
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-netlify' ></i>
+          </a>
+        </div>
+        <p class="portfolio__text2">image project</p>
+        <div class="portfolio__flur2"></div>
+        <div class="portfolio__img-box">
+          <img src="https://picsum.photos/id/71/271/200" alt="img">
+        </div>
+      </li>
+      <li class="portfolio__item">
+        <div class="portfolio__link-box">
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-netlify' ></i>
+          </a>
+        </div>
+        <p class="portfolio__text3">image project</p>
+        <div class="portfolio__flur3"></div>
+        <div class="portfolio__img-box">
+          <img src="https://picsum.photos/id/71/271/200" alt="img">
+        </div>
+      </li>
+      <li class="portfolio__item" id="blockbtn">
+        <div class="portfolio__link-box">
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-netlify' ></i>
+          </a>
+        </div>
+        <p class="portfolio__text">image project</p>
+        <div class="portfolio__flur"></div>
+        <div class="portfolio__img-box">
+          <img src="https://picsum.photos/id/71/271/200" alt="img">
+        </div>
+      </li>
+      <li class="portfolio__item">
+        <div class="portfolio__link-box">
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-netlify' ></i>
+          </a>
+        </div>
+        <p class="portfolio__text2">image project</p>
+        <div class="portfolio__flur2"></div>
+        <div class="portfolio__img-box">
+          <img src="https://picsum.photos/id/71/271/200" alt="img">
+        </div>
+      </li>
+      <li class="portfolio__item">
+        <div class="portfolio__link-box">
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a class="portfolio__link" href="#">
+            <i class='bx bxl-netlify' ></i>
+          </a>
+        </div>
+        <p class="portfolio__text3">image project</p>
+        <div class="portfolio__flur3"></div>
+        <div class="portfolio__img-box">
+          <img src="https://picsum.photos/id/71/271/200" alt="img">
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="go-top">
+    <a class="go-link" href="#"><i class='bx bx-up-arrow-alt'></i>
+      <i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</div>
 
 
+<div class="portfolio__block block" id="portoblock">
+  <div class="portfolio__info">
+    <button class=" block__btn-remove" id="portoremove">
+      <div class=" block__remove"></div>
+   </button>
+   <div class="block__inner">
+      <div class="portfolio__img-inner">
+        <img src="https://picsum.photos/id/7/425/310" alt="img">
+      </div>
+      <div class="portfolio__main another">
+        <h3 class="another__title">
+          IMAGE PROJECT
+        </h3>
+        <ul class="another__list style-none">
+          <li class="another__item">
+            <i class='bx bxs-user'></i>
+            <p class="another__text">Client : </p>
+             <p class="another__text2">ENVATO</p>
+          </li>
+          <li class="another__item">
+            <i class='bx bx-calendar-alt'></i>
+            <p class="another__text"> Start Date : </p>
+             <p class="another__text2">02/11/2017</p>
+          </li>
+          <li class="another__item">
+            <i class='bx bx-calendar-check'></i>
+            <p class="another__text">End Date :</p>
+             <p class="another__text2"> 02/08/2018 </p>
+          </li>
+          <li class="another__item">
+            <i class='bx bxs-wrench'></i>
+            <div class="another__text-box">
+              <p class="another__text"> Used Technologies:</p>
+              <p class="another__text2"> PHP, HTML, CSS, JAVASCRIPT </p>
+            </div>
+      
+          </li>
+        </ul>
+        <div class="another__link-box">
+        <a class="another__link link" href="#">prewiew<i class='bx bx-link-external'></i></a>
+      </div>
+
+      </div>
+    </div>
+    <div class="another__block-box">
+      <button class="another__btn">
+        <i class='bx bx-chevron-left'></i>
+      </button>
+      <button class="another__btn">
+        <i class='bx bx-chevron-right'></i>
+      </button>
+    </div>
+  </div>
+</div>
 
 
 

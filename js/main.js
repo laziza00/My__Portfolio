@@ -21,27 +21,69 @@ let elaboutbtn=document.getElementById('aboutbtn');
 let elaboutremove=document.getElementById('aboutremove');
 
 elaboutbtn.addEventListener('click',function () {
-elaboutbox.classList.add('about-show');
+elaboutbox.classList.add('portfolio-show');
 });
 
 elaboutremove.addEventListener('click',function () {
-elaboutbox.classList.remove('about-show');
+elaboutbox.classList.remove('portfolio-show');
  });
 
 
 
-// about modal
+// get modal
 let elgetmodalbox=document.getElementById('getmodalbox');
 let elgetbtn=document.getElementById('Getbtn');
 let elgetremove=document.getElementById('getremove');
 
 elgetbtn.addEventListener('click',function () {
-elgetmodalbox.classList.add('about-show');
+elgetmodalbox.classList.add('portfolio-show');
 });
 
 elgetremove.addEventListener('click',function () {
-elgetmodalbox.classList.remove('about-show');
+elgetmodalbox.classList.remove('portfolio-show');
  });
+
+
+ // portfolio modal
+
+let elportfoliobox=document.getElementById('portfoliobox');
+let elportfoliobtn=document.getElementById('portfoliobtn');
+let elportfolioremove=document.getElementById('portfolioremove');
+
+elportfoliobtn.addEventListener('click',function () {
+elportfoliobox.classList.add('portfolio-show');
+});
+
+elportfolioremove.addEventListener('click',function () {
+elportfoliobox.classList.remove('portfolio-show');
+ });
+ 
+
+
+
+
+
+//  porto block
+let elportobox=document.getElementById('portoblock');
+let elportobtn=document.getElementById('blockbtn');
+let elportoremove=document.getElementById('portoremove');
+
+elportobtn.addEventListener('click',function () {
+elportobox.classList.add('porto-show');
+});
+
+elportoremove.addEventListener('click',function () {
+elportobox.classList.remove('porto-show');
+ });
+
+
+
+
+
+
+
+
+
 
 
 // dark light
@@ -102,3 +144,17 @@ eleduitembox.classList.add('skill-show');
 // elaboutremove.addEventListener('click',function () {
 // elaboutbox.classList.remove('about-show');
 //  });
+
+
+
+
+
+
+
+
+var typed = new Typed(".type", {
+    strings: [ "Frontend developer","Backend developer","Freelancer","UI designer"],
+    typeSpeed: 160,
+    backSpeed: 120,
+    loop: true,
+});
