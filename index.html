@@ -29,7 +29,7 @@
     
           <ul class="hero__list style-none">
             <li class="hero__item ">        
-              <div>
+              <div class="hero__item-inner">
               <a class="hero__item-box" href="#">
                 <div class="hero__home">
                   <p class="hero__hello">hi  there !    i'm</p>
@@ -41,7 +41,8 @@
             </a>
           </div>
         </li>
-          <li class="hero__item"  id="aboutbtn">        
+          <li class="hero__item"  id="aboutbtn">   
+            <div class="hero__item-inner">   
             <a class="hero__item-box" href="#">
               <div class="hero__home-box">
                 <div class="hero__desc--white">
@@ -54,8 +55,10 @@
                 </div>
             </div>
           </a>
+        </div>  
       </li>
-      <li class="hero__item" id="portfoliobtn">        
+      <li class="hero__item" id="portfoliobtn">  
+        <div class="hero__item-inner">       
         <a class="hero__item-box" href="#">
           <div class="hero__home-box">
             <div class="hero__desc--white">
@@ -68,8 +71,10 @@
             </div>
         </div>
       </a>
+        </div>
   </li>
-      <li class="hero__item" id="Getbtn">          
+      <li class="hero__item" id="Getbtn"> 
+        <div class="hero__item-inner">          
         <a class="hero__item-box" href="#">
           <div class="hero__home-box">
             <div class="hero__desc--white">
@@ -82,6 +87,7 @@
             </div>
         </div>
       </a>
+        </div>
   </li>
 </ul>
 
@@ -95,7 +101,6 @@
     <i class='bx bxs-cog'></i>  
   </div>
  </div>
-  
     <div class="dark__inner" id="darkmodal">
       <div class="dark__inner-box"> 
         <p class="dark__text">style switecher</p>
@@ -103,7 +108,6 @@
         <div class="dark__remove-inner"></div>
       </button>
     </div>
-     
       <div class="dark__color">
         <ul class="dark__list style-none">
           <li class="dark__item">
@@ -146,7 +150,6 @@
             <button class="dark__red" id="seagreen">
             </button>
           </li>
-         
         </ul>
         <p class="dark__text">body skin</p>
       </div>
@@ -155,12 +158,8 @@
         </button>
         <button class="dark__btn" id="darkbtn"><i class='bx bxs-moon' ></i>
         </button>
-   
       </div>
- 
     </div>
-
-
 </section>
 
 
@@ -226,12 +225,7 @@
                    </h3>
                    <p class="about__item-info">Kazakh</p>
                  </li>
-                 <li class="about__item">
-                   <h3 class="about__item-desc">
-                     freelance:
-                   </h3>
-                   <p class="about__item-info">availabe</p>
-                 </li>
+     
                 </ul>
                 </div>
                 <div class="about__list-box">
@@ -246,7 +240,10 @@
                      <h3 class="about__item-desc">
                        email:
                      </h3>
-                     <p class="about__item-info gmail">lazizauchkunovna@gmail.com</p>
+                     <p class="about__item-info gmail">
+                      <a class="about__item-info gmail" href="https:// lazizauchkunovna@gmail.com" style="text-decoration: none">
+                        lazizauchkunovna@gmail.com</a>
+                     </p>
                    </li>
                    <li class="about__item">
                      <h3 class="about__item-desc">
@@ -256,18 +253,20 @@
                    </li>
                    <li class="about__item">
                      <h3 class="about__item-desc">
-                       skype:
+                       Linkedin:
                      </h3>
-                     <p class="about__item-info">laziza.abdulaxatova</p>
+                     <p class="about__item-info">
+                      <a  class="about__item-info"  href="https://www.linkedin.com/in/laziza-abdulaxatova-b87b16229/" style="text-decoration: none">  Laziza Abdulaxatova</a>
+                    </p>
                    </li>
                   </ul>
                 </div>
                </div>
                <div class="about__link-block">
-                 <a class="about__link-down link" href="#">
+                 <a class="about__link-down link" href="#" >
                    download resume   <i class='bx bx-file'></i>
                  </a>
-                 <a class="about__link-blog link" href="#">my blog  <i class='bx bxs-edit' ></i>
+                 <a class="about__link-blog link" href="https://t.me/frontend_laziza">my blog  <i class='bx bxs-edit' ></i>
                </a>
                </div>
          </div>
@@ -398,7 +397,7 @@
         <a class="go-link" href="#"><i class='bx bx-up-arrow-alt'></i>
           <i class='bx bx-up-arrow-alt'></i></a>
         </div>
-    </div>
+</div>
 
 
 <div class="get" id="getmodalbox">
@@ -423,7 +422,7 @@
             <li class="social__item">
              <p class="social__phone">PHONE</p> 
              <p class="social__num"><i class='bx bxs-phone'></i>
-              +34 62 11 84 01</p>
+              +97 755 47 04</p>
             </li>
             <li class="social__item">
               <p class="social__phone">EMAIL
@@ -432,9 +431,9 @@
                 lazizauchkunovna@gmail.com</p>
              </li>
              <li class="social__item">
-              <p class="social__phone">SKYPE</p> 
-              <p class="social__num"><i class='bx bxl-skype' ></i>
-                linda.smith</p>
+              <p class="social__phone">Linkedin</p> 
+              <p class="social__num"><i class='bx bxl-linkedin' ></i>
+                Laziza Abdulaxatova</p>
              </li>
              <li class="social__item">
               <p class="social__phone">ADDRESS
@@ -526,7 +525,7 @@
       <a class="go-link" href="#"><i class='bx bx-up-arrow-alt'></i>
         <i class='bx bx-up-arrow-alt'></i></a>
       </div>
-  </div>
+</div>
 
 
 
