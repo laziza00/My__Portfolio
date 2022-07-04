@@ -200,7 +200,7 @@ body {
   color: var(--text-yellow);
   text-transform: uppercase;
   transition: all 0.4s ease;
-  transform: translateY(-36.5px);
+  transform: translateY(-36px);
   display: block;
 }
 .hero__desc-yellow{
@@ -1316,7 +1316,8 @@ input:focus ~ .highlight {
   font-weight: 500;
   line-height: 110%;
   text-transform: uppercase;
-  padding: 12px 95px;
+  padding: 12px 0;
+  width: 90%;
   margin-top: 27px;
 }
 .bxl-telegram {
@@ -1559,8 +1560,8 @@ input:focus ~ .highlight {
   top: -100%;
   left: 0;
   background-color: var(--text-yellow);
-  width: 271px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   transition: all 0.4s ease;
 }
@@ -1569,8 +1570,8 @@ input:focus ~ .highlight {
   top: 0;
   right: -100%;
   background-color: var(--text-yellow);
-  width: 271px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   transition: all 0.4s ease;
 }
@@ -1660,8 +1661,8 @@ input:focus ~ .highlight {
   overflow: hidden;
 }
 .portfolio__img {
-  width: 271px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .portfolio__link {
@@ -2320,6 +2321,14 @@ input:focus ~ .highlight {
   height: 35px;
   width: 3px;
 }
+.portfolio__remove::after {
+  height: 35px;
+  width: 3px;
+}
+.portfolio__remove::before {
+  height: 35px;
+  width: 3px;
+}
 .skill__block {
   padding: 20px 0 0 0;
 }
@@ -2478,6 +2487,17 @@ input:focus ~ .highlight {
   }
   .get__btn-send {
     padding: 12px 45px;
+    width: 100%;
+  }
+  .portfolio__list {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .portfolio__item {
+    width: 100%;
+    margin: 0 auto 24px auto;
+  }
+  .portfolio__img-box {
     width: 100%;
   }
 }  
