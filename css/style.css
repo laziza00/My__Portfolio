@@ -1543,7 +1543,7 @@ input:focus ~ .highlight {
   overflow: hidden;
   cursor: pointer;
   width: 31%;
-  height: 200px;
+  height: 200px !important;
 }
 .portfolio__flur {  
   position: absolute;
@@ -1616,6 +1616,51 @@ input:focus ~ .highlight {
   transition: all 0.4s ease;
 }
 .portfolio__item:nth-child(9):hover .portfolio__flur3 {
+  right: 0;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.portfolio__item:nth-child(10):hover .portfolio__flur {
+  left: 0;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.portfolio__item:nth-child(11):hover .portfolio__flur2 {
+  top: 0;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.portfolio__item:nth-child(12):hover .portfolio__flur3 {
+  right: 0;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.portfolio__item:nth-child(13):hover .portfolio__flur {
+  left: 0;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.portfolio__item:nth-child(14):hover .portfolio__flur2 {
+  top: 0;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.portfolio__item:nth-child(15):hover .portfolio__flur3 {
+  right: 0;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.portfolio__item:nth-child(16):hover .portfolio__flur {
+  left: 0;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.portfolio__item:nth-child(17):hover .portfolio__flur2 {
+  top: 0;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.portfolio__item:nth-child(18):hover .portfolio__flur3 {
   right: 0;
   opacity: 1;
   transition: all 0.4s ease;
@@ -2372,6 +2417,17 @@ input:focus ~ .highlight {
 .get__line-box {
   margin: 0 auto 30px auto;
 }
+.portfolio__list {
+  flex-direction: column;
+  justify-content: center;
+}
+.portfolio__item {
+  width: 100%;
+  margin: 0 auto 24px auto;
+}
+.portfolio__img-box {
+  width: 100%;
+}
 }
 
 @media screen and (max-width: 650px) {
@@ -2489,17 +2545,7 @@ input:focus ~ .highlight {
     padding: 12px 45px;
     width: 100%;
   }
-  .portfolio__list {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .portfolio__item {
-    width: 100%;
-    margin: 0 auto 24px auto;
-  }
-  .portfolio__img-box {
-    width: 100%;
-  }
+
 }  
 @media screen and (max-width: 400px) {
   
