@@ -63,28 +63,6 @@ elportfoliobox.classList.remove('portfolio-show');
 
 
 
-//  porto block
-let elportobox=document.getElementById('portoblock');
-let elportobtn=document.getElementById('blockbtn');
-let elportoremove=document.getElementById('portoremove');
-
-elportobtn.addEventListener('click',function () {
-elportobox.classList.add('porto-show');
-});
-
-elportoremove.addEventListener('click',function () {
-elportobox.classList.remove('porto-show');
- });
-
-
-
-
-
-
-
-
-
-
 
 // dark light
 document.getElementById('darkbtn').addEventListener('click', function () {document.body.classList.toggle('dark');
