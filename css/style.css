@@ -1665,6 +1665,11 @@ input:focus ~ .highlight {
   opacity: 1;
   transition: all 0.4s ease;
 }
+.portfolio__item:nth-child(19):hover .portfolio__flur {
+  left: 0;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
 
 .portfolio__text {
   position: absolute;
@@ -1816,9 +1821,8 @@ input:focus ~ .highlight {
   transition: all 0.4s ease;
   z-index: 500;
 }
-.portfolio__item:nth-child(11):hover .portfolio__text3 {
+.portfolio__item:nth-child(11):hover .portfolio__text2 {
   top: 40%;
-  right: 19%;
   opacity: 1;
   transition: all 0.4s ease;
   z-index: 500;
@@ -1837,9 +1841,8 @@ input:focus ~ .highlight {
   transition: all 0.4s ease;
   z-index: 500;
 }
-.portfolio__item:nth-child(14):hover .portfolio__text3 {
+.portfolio__item:nth-child(14):hover .portfolio__text2 {
   top: 40%;
-  right: 19%;
   opacity: 1;
   transition: all 0.4s ease;
   z-index: 500;
@@ -1858,9 +1861,8 @@ input:focus ~ .highlight {
   transition: all 0.4s ease;
   z-index: 500;
 }
-.portfolio__item:nth-child(17):hover .portfolio__text3 {
+.portfolio__item:nth-child(17):hover .portfolio__text2 {
   top: 40%;
-  right: 19%;
   opacity: 1;
   transition: all 0.4s ease;
   z-index: 500;
@@ -1868,6 +1870,12 @@ input:focus ~ .highlight {
 .portfolio__item:nth-child(18):hover .portfolio__text3 {
   top: 40%;
   right: 19%;
+  opacity: 1;
+  transition: all 0.4s ease;
+  z-index: 500;
+}
+.portfolio__item:nth-child(19):hover .portfolio__text {
+  left: 19%;
   opacity: 1;
   transition: all 0.4s ease;
   z-index: 500;
@@ -1943,6 +1951,10 @@ input:focus ~ .highlight {
 }
 .portfolio__item:nth-child(18):hover .portfolio__link-box {
   right: 30%;
+  transition: all 0.4s ease;
+}
+.portfolio__item:nth-child(19):hover .portfolio__link-box1 {
+  left: 30%;
   transition: all 0.4s ease;
 }
 
